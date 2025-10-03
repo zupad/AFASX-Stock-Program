@@ -1,0 +1,38 @@
+⚡ QUICK START - ELLIOT FIDGE'S STOCK TRACKER ⚡
+
+🚀 FASTEST WAY TO GET STARTED:
+
+Windows: Double-click "INSTALL.bat"
+Mac/Linux: Run "./install.sh" in terminal
+
+That's it! The installer does everything automatically.
+
+========================================
+
+🎯 WHAT YOU GET:
+
+✅ Analyze any ASX stock (AFI, CBA, BHP, CSL, etc.)
+✅ Professional technical analysis reports  
+✅ Real-time price data and historical charts
+✅ Financial performance metrics
+✅ Company information and fundamentals
+✅ All data automatically saved to database
+
+========================================
+
+💡 EXAMPLE COMMANDS (after installation):
+
+python afi_stock_tracker.py
+python afi_stock_tracker.py analyze --symbol CBA
+python afi_stock_tracker.py analyze --symbol BHP --period 6mo
+python afi_stock_tracker.py test
+
+========================================
+
+📞 NEED HELP?
+
+1. Run: python afi_stock_tracker.py test (shows all commands)
+2. Check: README.md (complete documentation)  
+3. Check: INSTALL.txt (manual installation steps)
+
+Created by Elliot Fidge - Version 2.0

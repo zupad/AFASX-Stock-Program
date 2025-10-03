@@ -1,0 +1,37 @@
+# Elliot Fidge's Advanced Stock Tracker - Essential Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core Data & APIs (Required)
+yfinance>=0.2.18
+requests>=2.31.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database (Required)
+sqlalchemy>=2.0.0
+
+# User Interface (Required)
+click>=8.1.0
+rich>=13.4.0
+
+# Configuration (Required)
+python-dotenv>=1.0.0
+
+# Optional but recommended for enhanced features
+# Uncomment the lines below if you want additional features:
+
+# For web dashboard:
+# streamlit>=1.25.0
+# plotly>=5.15.0
+
+# For news analysis:
+# newsapi-python>=0.2.6
+# textblob>=0.17.1
+
+# For advanced analytics:
+# scikit-learn>=1.3.0
+# scipy>=1.10.0
+
+# For Alpha Vantage API (optional):
+# alpha-vantage>=2.3.1
+

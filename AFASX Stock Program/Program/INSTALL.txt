@@ -1,0 +1,89 @@
+========================================
+ELLIOT FIDGE'S ADVANCED STOCK TRACKER
+Installation Guide - Version 2.0
+========================================
+
+🚀 AUTOMATIC INSTALLATION (RECOMMENDED)
+
+WINDOWS USERS:
+--------------
+1. Double-click: INSTALL.bat
+   OR
+   Right-click INSTALL.ps1 → "Run with PowerShell"
+
+LINUX/MAC USERS:
+-----------------
+1. Open terminal in this folder
+2. Run: chmod +x install.sh
+3. Run: ./install.sh
+
+The automatic installer will:
+• Download and install Python if needed
+• Install all required packages automatically  
+• Test the installation
+• Run a demo for you
+
+========================================
+
+🔧 MANUAL INSTALLATION (if needed)
+
+STEP 1: Install Python
+-----------------------
+• Download Python 3.8+ from python.org
+• During installation, check "Add Python to PATH"
+• Verify: Open command prompt, type: python --version
+
+STEP 2: Install Dependencies  
+----------------------------
+• Open command prompt/terminal
+• Navigate to this folder
+• Run: pip install -r requirements.txt
+
+STEP 3: Test Installation
+-------------------------
+• Run: python afi_stock_tracker.py test
+• Should show: "✅ Elliot Fidge's Stock Tracker initialized successfully"
+
+STEP 4: Start Using!
+--------------------
+• Basic AFI analysis: python afi_stock_tracker.py
+• Any ASX stock: python afi_stock_tracker.py analyze --symbol CBA
+• Get help: python afi_stock_tracker.py test
+
+========================================
+
+🔧 TROUBLESHOOTING
+
+Problem: "Python not found"
+Solution: Install Python and add to PATH
+
+Problem: "Module not found" 
+Solution: Run: pip install -r requirements.txt
+
+Problem: "No data retrieved"
+Solution: Check internet connection
+
+Problem: Need help with commands
+Solution: Run: python afi_stock_tracker.py test
+
+========================================
+
+📞 SUPPORT
+
+Created by: Elliot Fidge
+Version: 2.0 Advanced Edition
+
+For help:
+1. Run the test command for full help
+2. Check README.md for detailed instructions
+3. Ensure Python 3.8+ is installed
+
+========================================
+
+⚠️ DISCLAIMER
+
+This tool is for educational purposes only.
+Stock market investments carry risk.
+Always consult financial professionals.
+
+========================================
