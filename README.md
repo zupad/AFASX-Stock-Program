@@ -6,7 +6,7 @@ Created by **Elliot Fidge** for comprehensive analysis of Australian Securities 
 
 ---
 
-## What This ## License & Disclaimer
+## What This License & Disclaimer
 
 **Created by Elliot Fidge - Version 2.0 Advanced Edition**
 
