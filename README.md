@@ -1,4 +1,4 @@
-# Elliot Fidge's Advanced Stock Tracker
+# Advanced Stock Tracker
 
 **Professional ASX Stock Analysis Tool - Version 2.0**
 
