@@ -1,4 +1,4 @@
-# 📈 Elliot Fidge's Advanced Stock Tracker
+# Elliot Fidge's Advanced Stock Tracker
 
 **Professional ASX Stock Analysis Tool - Version 2.0**
 
@@ -6,22 +6,64 @@ Created by **Elliot Fidge** for comprehensive analysis of Australian Securities 
 
 ---
 
-## 🎯 **What This Tool Does**
+## What This ## License & Disclaimer
 
+**Created by Elliot Fidge - Version 2.0 Advanced Edition**
+
+**Important:** This tool is for educational and informational purposes only. Stock market investments carry risk. Always consult with financial professionals before making investment decisions.
+
+*This software uses Yahoo Finance and other free data sources. No warranty is provided for data accuracy.*
+
+---
+
+**Powered by Elliot Fidge's Advanced Stock Tracker v2.0**
 Analyze any ASX-listed stock with professional-grade reports including:
 
-- **📊 Real-time prices** and historical data analysis
-- **📈 Technical indicators** (RSI, Moving Averages, Bollinger Bands)
-- **💼 Financial performance** metrics (returns, volatility, Sharpe ratio)
-- **🏢 Company information** (sector, industry, market cap)
-- **🔮 Advanced analytics** and price predictions
+- **Real-time prices** and historical data analysis
+- **Technical indicators** (RSI, Moving Averages, Bollinger Bands)
+- **Financial performance** metrics (returns, volatility, Sharpe ratio)
+- **Company information** (sector, industry, market cap)
+- **Advanced analytics** and price predictions
 
-## 🚀 **Quick Start Guide**
+## Quick Start Guide
 
-### 1. **Installation**
+### 1. Installation Options
+
+#### Automatic Installation (Recommended)
+
+**Windows Users (Choose One):**
+```batch
+# Option 1: Double-click this file
+INSTALL.bat
+
+# Option 2: Right-click and "Run with PowerShell"
+INSTALL.ps1
+```
+
+**Linux/Mac Users:**
 ```bash
-# Install required packages
+# Make executable and run
+chmod +x install.sh
+./install.sh
+```
+
+#### What the Auto-Installer Does:
+- Detects and installs Python 3.8+ if needed
+- Installs all required packages from `requirements.txt`
+- Tests the installation automatically
+- Offers to run a demo analysis
+- Sets up the complete environment
+
+#### Manual Installation
+```bash
+# Step 1: Ensure Python 3.8+ is installed
+python --version
+
+# Step 2: Install required packages
 pip install -r requirements.txt
+
+# Step 3: Test installation
+python afi_stock_tracker.py test
 ```
 
 ### 2. **Run Analysis**
@@ -40,7 +82,7 @@ python afi_stock_tracker.py analyze --symbol BHP --period 6mo
 python afi_stock_tracker.py test
 ```
 
-## 📋 **Available Commands**
+## Available Commands
 
 | Command | Description | Example |
 |---------|-------------|---------|
@@ -50,9 +92,9 @@ python afi_stock_tracker.py test
 | `dashboard` | Launch web interface | Opens in browser |
 | `test` | Show all commands | Complete help guide |
 
-**Time Periods:** `1d`, `5d`, `1mo`, `3mo`, `6mo`, `1y`, `2y`, `5y`, `max`
+**Available time periods:** `1d`, `5d`, `1mo`, `3mo`, `6mo`, `1y`, `2y`, `5y`, `max`
 
-## 💡 **Supported Stocks**
+## Supported Stocks
 
 Works with **any ASX-listed stock** including:
 
@@ -71,16 +113,16 @@ Works with **any ASX-listed stock** including:
 
 *And hundreds more ASX-listed companies!*
 
-## 📊 **Sample Output**
+## Sample Output
 
 ```
-📊 Elliot Fidge's Stock Tracker - CBA.AX
-📈 Commonwealth Bank of Australia (CBA)
+Elliot Fidge's Stock Tracker - CBA.AX
+Commonwealth Bank of Australia (CBA)
 Advanced Stock Analysis Report
 Generated: 2025-10-03 10:54:35
 Powered by Elliot Fidge's Stock Tracker v2.0
 
-💰 Current Price Information
+Current Price Information
 ┌─────────────────┬─────────┐
 │ Current Price   │ $170.10 │
 │ 52-Week High    │ $170.95 │
@@ -88,14 +130,14 @@ Powered by Elliot Fidge's Stock Tracker v2.0
 │ 1-Day Change    │ +0.17%  │
 └─────────────────┴─────────┘
 
-📈 Technical Indicators
+Technical Indicators
 ┌─────────────┬─────────┬────────────┐
-│ RSI (14)    │ 52.89   │ ⚪ Neutral │
-│ SMA (20)    │ $167.22 │ 🟢 Above   │
-│ SMA (50)    │ $nan    │ 🔴 Below   │
+│ RSI (14)    │ 52.89   │ Neutral    │
+│ SMA (20)    │ $167.22 │ Above      │
+│ SMA (50)    │ $nan    │ Below      │
 └─────────────┴─────────┴────────────┘
 
-💼 Financial Performance
+Financial Performance
 ┌───────────────────┬─────────┐
 │ Total Return      │ 0.03%   │
 │ Annualized Return │ 0.39%   │
@@ -104,52 +146,84 @@ Powered by Elliot Fidge's Stock Tracker v2.0
 └───────────────────┴─────────┘
 ```
 
-## 🔧 **Features**
+## Features
 
-### **Core Analytics**
+### Core Analytics
 - Real-time price data from Yahoo Finance
 - Historical price analysis with multiple timeframes
 - Technical indicators (RSI, SMA, EMA, MACD, Bollinger Bands)
 - Financial performance metrics and risk analysis
 - Company fundamental information
 
-### **User Experience**
-- Beautiful command-line interface with colored output
+### User Experience
+- Clean command-line interface with colored output
 - Professional tables and charts
 - Comprehensive error handling
 - Automatic data saving to SQLite database
 - Optional web dashboard interface
 
-### **Flexibility**
+### Flexibility
 - Analyze any ASX-listed stock
 - Multiple time periods (1 day to maximum history)
 - Customizable analysis parameters
 - Export data capabilities
 
-## 📁 **Project Structure**
+## Project Structure
 
 ```
 Elliot Fidge's Stock Tracker/
-├── afi_stock_tracker.py    # Main application
-├── requirements.txt        # Required packages
-├── README.md              # This file
-├── run_tracker.bat        # Windows batch file
-├── config/                # Configuration files
-├── src/                   # Source code modules
-│   ├── apis/             # Data source APIs
-│   ├── analytics/        # Analysis modules
-│   ├── database/         # Database management
-│   └── visualization/    # Charts and dashboards
-└── data/                 # Database storage
+├── afi_stock_tracker.py      # Main application
+├── afi_dashboard.py          # Web dashboard interface
+├── requirements.txt          # Python dependencies
+├── README.md                 # Main documentation (this file)
+│
+├── Installation Files
+├── INSTALL.bat              # Windows auto-installer (batch)
+├── INSTALL.ps1              # Windows auto-installer (PowerShell)
+├── install.sh               # Linux/Mac auto-installer
+├── INSTALL.txt              # Manual installation guide
+├── INSTALLATION_README.md   # Installation documentation
+├── QUICKSTART.txt           # Quick start guide
+├── run_tracker.bat          # Windows runner script
+│
+├── Directories
+├── config/                  # Configuration files
+├── data/                    # Database storage
+├── logs/                    # Application logs
+└── src/                     # Source code modules
+    ├── apis/               # Data source APIs
+    ├── analytics/          # Analysis modules
+    ├── database/           # Database management
+    └── visualization/      # Charts and dashboards
 ```
 
-## 🚨 **Requirements**
+## Installation Files Reference
+
+| File | Purpose | Platform | Usage |
+|------|---------|----------|--------|
+| **INSTALL.bat** | Auto-installer with GUI | Windows | Double-click to run |
+| **INSTALL.ps1** | PowerShell auto-installer | Windows | Right-click → "Run with PowerShell" |
+| **install.sh** | Auto-installer script | Linux/Mac | `chmod +x install.sh && ./install.sh` |
+| **requirements.txt** | Python dependencies | All | `pip install -r requirements.txt` |
+| **run_tracker.bat** | Quick launcher | Windows | Double-click to run tracker |
+| **INSTALL.txt** | Manual installation guide | All | Read for manual setup steps |
+| **INSTALLATION_README.md** | Installation documentation | All | Detailed installation instructions |
+| **QUICKSTART.txt** | Quick start guide | All | Fast setup and usage guide |
+
+### Which Installation Method to Choose?
+
+- **First-time users:** Use `INSTALL.bat` (Windows) or `install.sh` (Linux/Mac)
+- **Advanced users:** Use `INSTALL.ps1` (Windows PowerShell)
+- **Manual setup:** Follow `INSTALL.txt` or `INSTALLATION_README.md`
+- **Already installed:** Use `run_tracker.bat` for quick launching
+
+## Requirements
 
 - **Python 3.8 or higher**
 - **Internet connection** (for stock data)
 - **Windows, macOS, or Linux**
 
-## 📞 **Support**
+## Support
 
 This tool was created by **Elliot Fidge** for personal and educational use.
 
@@ -170,4 +244,4 @@ For issues or questions:
 
 ---
 
-**Powered by Elliot Fidge's Advanced Stock Tracker v2.0** 📈
+**Powered by Elliot Fidge's Advanced Stock Tracker v2.0** 
