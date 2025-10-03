@@ -10,7 +10,7 @@ I created this originally to only be for the Australian Foundation stock, but th
 
 ---
 
-## What This License & Disclaimer
+## License & Disclaimer
 
 **Created by Elliot Fidge - Version 2.0 Advanced Edition**
 
