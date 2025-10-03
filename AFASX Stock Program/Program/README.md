@@ -6,7 +6,7 @@ Created by **Elliot Fidge** for comprehensive analysis of Australian Securities 
 
 ---
 
-## What This ## License & Disclaimer
+## License & Disclaimer
 
 **Created by Elliot Fidge - Version 2.0 Advanced Edition**
 
@@ -245,3 +245,4 @@ For issues or questions:
 ---
 
 **Powered by Elliot Fidge's Advanced Stock Tracker v2.0** 
+
