@@ -4,6 +4,10 @@
 
 Created by **Elliot Fidge** for comprehensive analysis of Australian Securities Exchange (ASX) stocks.
 
+Made as a passion project that turned into something bigger than I expected
+
+I created this originally to only be for the Australian Foundation stock, but then implemented the ability to track all ASX stocks
+
 ---
 
 ## What This License & Disclaimer
